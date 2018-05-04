@@ -3,13 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#60B1F3"
+    android:background="@color/background"
     tools:context="com.example.android.rugbyscorekeeper.MainActivity">
 
     <ImageView
         android:id="@+id/logo"
         android:layout_width="wrap_content"
-        android:layout_height="150dp"
+        android:layout_height="@dimen/logo_height"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
@@ -34,8 +34,8 @@
                 android:id="@+id/editText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
+                android:layout_marginLeft="@dimen/margin_sides"
+                android:layout_marginRight="@dimen/margin_sides"
                 android:hint="@string/home_team"
                 android:inputType="textPersonName"
                 android:singleLine="true" />
@@ -45,51 +45,51 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:padding="16dp"
+                android:padding="@dimen/padding_textview"
                 android:text="@string/_0"
-                android:textSize="40sp" />
+                android:textSize="@dimen/score_text" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
+                android:layout_marginBottom="@dimen/bottom_margin"
+                android:layout_marginLeft="@dimen/margin_sides"
+                android:layout_marginRight="@dimen/margin_sides"
                 android:onClick="add5HomeTeam"
                 android:text="@string/ty" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
+                android:layout_marginBottom="@dimen/bottom_margin"
+                android:layout_marginLeft="@dimen/margin_sides"
+                android:layout_marginRight="@dimen/margin_sides"
                 android:onClick="add2HomeTeam"
                 android:text="@string/conversion" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
+                android:layout_marginBottom="@dimen/bottom_margin"
+                android:layout_marginLeft="@dimen/margin_sides"
+                android:layout_marginRight="@dimen/margin_sides"
                 android:onClick="add3HomeTeam"
                 android:text="@string/penalty_kick" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
+                android:layout_marginBottom="@dimen/bottom_margin"
+                android:layout_marginLeft="@dimen/margin_sides"
+                android:layout_marginRight="@dimen/margin_sides"
                 android:onClick="add3HomeTeam"
                 android:text="@string/drop_goal" />
         </LinearLayout>
 
         <View
-            android:layout_width="1dp"
+            android:layout_width="@dimen/view_width"
             android:layout_height="match_parent"
-            android:background="#0a4e85" />
+            android:background="@color/view_color" />
 
 
         <LinearLayout
@@ -102,8 +102,8 @@
                 android:id="@+id/editText2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
+                android:layout_marginLeft="@dimen/margin_sides"
+                android:layout_marginRight="@dimen/margin_sides"
                 android:hint="@string/away_team"
                 android:inputType="textPersonName"
                 android:singleLine="true" />
@@ -113,45 +113,47 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:padding="16dp"
+                android:padding="@dimen/padding_textview"
                 android:text="@string/_0"
-                android:textSize="40sp" />
+                android:textSize="@dimen/score_text" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
+                android:layout_marginBottom="@dimen/bottom_margin"
+                android:layout_marginLeft="@dimen/margin_sides"
+                android:layout_marginRight="@dimen/margin_sides"
                 android:onClick="add5AwayTeam"
                 android:text="@string/ty" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
+                android:layout_marginBottom="@dimen/bottom_margin"
+                android:layout_marginLeft="@dimen/margin_sides"
+                android:layout_marginRight="@dimen/margin_sides"
                 android:onClick="add2AwayTeam"
                 android:text="@string/conversion" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
+                android:layout_marginBottom="@dimen/bottom_margin"
+                android:layout_marginLeft="@dimen/margin_sides"
+                android:layout_marginRight="@dimen/margin_sides"
                 android:onClick="add3AwayTeam"
                 android:text="@string/penalty_kick" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
+                android:layout_marginBottom="@dimen/bottom_margin"
+                android:layout_marginLeft="@dimen/margin_sides"
+                android:layout_marginRight="@dimen/bottom_margin"
                 android:onClick="add3AwayTeam"
-                android:text="@string/drop_goal" />
+                android:text="@string/drop_goal"
+                android:layout_marginStart="@dimen/margin_sides"
+                android:layout_marginEnd="@dimen/bottom_margin" />
         </LinearLayout>
     </LinearLayout>
 

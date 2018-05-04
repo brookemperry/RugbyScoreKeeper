@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="logo_height">150dp</dimen>
+    <dimen name="margin_sides">16dp</dimen>
+    <dimen name="padding_textview">16dp</dimen>
+    <dimen name="score_text">40sp</dimen>
+    <dimen name="bottom_margin">8dp</dimen>
+    <dimen name="view_width">1dp</dimen>
+</resources>
